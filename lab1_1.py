@@ -15,7 +15,7 @@ def download(ident):
               .replace('</pre></tt>', '')
               .replace(',,', ',')
               .replace(', ', ',')
-              .replace('  ', ',,')
+              .replace('  ', ',%02d,' % ident)
               .replace(', ', ',')
               .replace(' ', ','))
     out.close()
